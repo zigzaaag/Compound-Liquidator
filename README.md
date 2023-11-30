@@ -8,7 +8,7 @@
 
 **工作流**
 
-最终决定做一个Compound清算机器人,清算步骤如下:
+一个Compound清算机器人的清算步骤如下:
 
 1. 从subgraph查找没有还清债务的账户地址
 2. 调用comptroller合约中的`getAccountLiquidity()`,通过返回值中的`shortfall`来判断是否可清算(非0可清算),如果是,将账户和相关的token信息加入清算队列
